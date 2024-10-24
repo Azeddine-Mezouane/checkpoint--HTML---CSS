@@ -336,7 +336,13 @@ position: fixed;
 bottom:  4vw;
 right:  4vw;
 cursor: pointer;
+animation: bounce;
+animation-duration: 2s ;
+animation-iteration-count: inherit;
+animation-delay: 1s;
 }
+
+
 .topBTN img{
   width: 5vw;
 }
@@ -345,6 +351,7 @@ cursor: pointer;
  
   scale: 1.05;
   transition: 0.2s;
+ 
 }
 .c{
   color: #6c63bb;
