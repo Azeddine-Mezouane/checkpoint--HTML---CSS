@@ -6,7 +6,7 @@
   margin: 0vh;
   /* box-shadow: 0 0 0 3px red inset; */
 }
-*::selection{
+*::selection {
   background-color: #6c63bb;
   color: #141414;
 }
@@ -23,13 +23,14 @@ body {
 
 .logo {
   width: 15vh;
-  font-size: 4vw;
+
+  font-size: max(4vw, 15px);
   color: #ededf5;
 }
 
 .logo span {
   width: 15vh;
-  font-size: 4vw;
+  font-size: max(4vw, 15px);
   color: #6c63bb;
 }
 
@@ -211,7 +212,7 @@ nav ul li a:hover {
   display: flex;
   margin: 9vw 10vw;
 
-  padding-top: 15vw;
+  padding-top: 12vw;
   padding-bottom: 15vw;
   align-items: center;
   flex-direction: column;
@@ -251,7 +252,7 @@ nav ul li a:hover {
   color: #ffffff;
   padding: 0.5vw;
   font-family: "Medula One", system-ui;
-  font-size: 1.9vw;
+  font-size: 3vw;
   font-weight: 400;
 }
 
@@ -387,4 +388,81 @@ footer {
 .c {
   color: #6c63bb;
   font-weight: 600;
+}
+@media (max-width: 480px) {
+  nav {
+    visibility: hidden;
+  }
+  .logo {
+    margin-top: 3vw;
+    font-size: max(7vw, 15px);
+  }
+  .logo span {
+    font-size: max(7vw, 15px);
+  }
+  #accueil {
+    flex-direction: column-reverse;
+    margin-top: 1.5vw;
+
+    margin-right: 0px;
+  }
+  .accText {
+    display: flex;
+    width: 70%;
+    align-items: center;
+  }
+  #accueil P {
+    width: 60%;
+    font-size: max(2vw, 5px);
+  }
+  .aproposTV {
+    flex-direction: column;
+  }
+  .aproposTV video {
+    width: 90%;
+  }
+  .aproposTV P {
+    font-size: max(2vw, 5px);
+    width: 90%;
+    line-height: 3.5vw;
+  }
+  #a-propos h2 {
+    font-size: 6vw;
+  }
+  #travail h2 {
+    font-size: 6vw;
+  }
+  #travail ul {
+    margin-top: 15vh;
+    flex-direction: column;
+    gap: 30vh;
+  }
+  #travail ul li {
+    scale: 2.5;
+  }
+  #cv h2 {
+    font-size: 6vw;
+  }
+
+  #cv {
+    margin-top:15vw;
+    padding-bottom: 0;
+  }
+  .table_component {
+    width: 80%;
+  }
+  .table_component th {
+    font-size: 3vw;
+  }
+
+  #contact h2 {
+    font-size: 6vw;
+  }
+  form {
+    margin: 7vh;
+    scale: 1.5;
+  }
+  footer{
+    scale: 2;
+  }
 }
