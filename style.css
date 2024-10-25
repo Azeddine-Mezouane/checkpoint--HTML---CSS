@@ -445,7 +445,7 @@ footer {
   }
 
   #cv {
-    margin-top:15vw;
+    margin-top: 15vw;
     padding-bottom: 0;
   }
   .table_component {
@@ -462,7 +462,12 @@ footer {
     margin: 7vh;
     scale: 1.5;
   }
-  footer{
+  footer {
     scale: 2;
   }
+  .topBTN img {
+    width: 12vw;
+   
+    
+
 }
